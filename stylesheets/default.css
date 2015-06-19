@@ -1,0 +1,116 @@
+body{
+  background-color: #a4a9ff;
+}
+section{
+  background-color: #adadb1;
+  border-radius: 40px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+#main-title{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1{
+  font-family: Indie Flower;
+  font-size: 3em;
+  text-align: center;
+}
+h3{
+  text-align: center;
+  font-family: Lobster;
+}
+
+
+.left{
+  float: left;
+  margin: 1em;
+  height: 16em;
+  width: 15em;
+}
+#profile{
+  height: 10em;
+  width: 10em;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#navigation-bar{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar-buttons{
+  display: inline-block;
+  margin-left: 60px;
+}
+
+article{
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 47%;
+  z-index: 1;
+}
+a p {
+  position: relative;
+  font-size: 1em;
+  margin-top: 25px;
+}
+
+aside{
+  display: inline-block;
+  background-color: #adadb1;
+  height: 250px;
+  width: 110px;
+  border-radius: 20px;
+}
+table{
+  margin-top: 10%;
+}
+td{
+  font-size: 15px;
+  font-family: Maven Pro;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.navigation-bar{
+  display: inline-block;
+  z-index: 2;
+}
+.navigation-buttons{
+  background-color: #7a81ff;
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+  border-radius: 100%;
+  text-align: center;
+  margin: 1em;
+}
+
+.right{
+  float: right;
+  margin: 1em;
+  height: 18em;
+  width: 11em;
+  margin-top: -150px;
+}
+.links{
+  height: 2em;
+  width: 10em;
+  margin-left: 10px;
+}
+
