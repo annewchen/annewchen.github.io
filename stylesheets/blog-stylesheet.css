@@ -67,4 +67,22 @@ img {
   display: block;
 }
 
+aside {
+  background-color: #adadb1;
+  border-radius: 40px;
+  width: 20%;
+  margin-left: 2em;
+  margin-right: 2em;
+}
 
+.right{
+  float: right;
+  height: 18em;
+  margin-top: -45em;
+}
+
+.lsidebar-links{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
