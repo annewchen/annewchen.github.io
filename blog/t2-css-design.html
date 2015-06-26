@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Anne's Blog</title>
+    <title>Anne's Blog: CSS property Design</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Maven+Pro:400,700|Architects+Daughter' rel='stylesheet' type='text/css'>
@@ -49,53 +49,54 @@
         <p>
           The display property controls the basic layout of your website. Think of every element you put on a website as being in an invisible box. The display property is your way of telling those invisible boxes how to behave with each other. Most issues arise because boxes cannot overlap. There are four basic values that a display property can have which are explained below.
         </p>
+        <h3>Block</h3>
+
+        <pre><code>
+p {
+  display: block;
+  height: 3em;
+  width: 3em;
+}
+        </code></pre>
+        <img src="../imgs/display-block.png"/>
         <p>
-          <h3>Block</h3>
-          <pre><code>
-      p {
-        display: block;
-        height: 3em;
-        width: 3em;
-      }
-          </code></pre>
-          <img src="../imgs/display-block.png"/>
           The Block value makes the box sit on it's own line. It also adds a line break before and after it.
         </p>
+        <h3>Inline</h3>
+        <pre><code>
+p {
+  display: inline;
+  height: 3em;
+  width: 3em;
+}
+        </code></pre>
+        <img src="../imgs/display-inline.png"/>
         <p>
-          <h3>Inline</h3>
-          <pre><code>
-      p {
-        display: inline;
-        height: 3em;
-        width: 3em;
-      }
-          </code></pre>
-          <img src="../imgs/display-inline.png"/>
           The Inline value makes the box only take as much space as needed. In my example, it overwrote my height and width values. It allows other boxes to sit on the same line.
         </p>
+        <h3>Inline-Block</h3>
+        <pre><code>
+p {
+  display: inline-block;
+  height: 3em;
+  width: 3em;
+}
+        </code></pre>
+        <img src="../imgs/display-inlineblock.png"/>
         <p>
-          <h3>Inline-Block</h3>
-          <pre><code>
-      p {
-        display: inline-block;
-        height: 3em;
-        width: 3em;
-      }
-          </code></pre>
-          <img src="../imgs/display-inlineblock.png"/>
-          The Inline-Block value is, as its name implies, a combination of inline and block. It is like inline in that it still lets other boxes sit on the same line. The difference is that you can specify a height and width for the box.
+        The Inline-Block value is, as its name implies, a combination of inline and block. It is like inline in that it still lets other boxes sit on the same line. The difference is that you can specify a height and width for the box.
         </p>
+        <h3>None</h3>
+        <pre><code>
+p {
+  display: none;
+  height: 3em;
+  width: 3em;
+}
+        </code></pre>
+        <img src="../imgs/display-none.png"/>
         <p>
-          <h3>None</h3>
-          <pre><code>
-      p {
-        display: none;
-        height: 3em;
-        width: 3em;
-      }
-          </code></pre>
-          <img src="../imgs/display-none.png"/>
-          The None value simply makes the  box invisible. This can be used it you want something running in the background and not to be seen by the user.
+        The None value simply makes the  box invisible. This can be used it you want something running in the background and not to be seen by the user.
         </p>
         <p>
           In conclusion, the display concepts are not too hard to understand. It is definitely a lot easier seeing the comparisons side-by-side. I hope this reference was helpful to you. Have fun coding!
