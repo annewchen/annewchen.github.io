@@ -61,11 +61,12 @@ section{
 .navigation-buttons{
   background-color: #7a81ff;
   display: inline-block;
+  position: static;
   height: 5em;
   width: 5em;
   border-radius: 100%;
   text-align: center;
-  margin: 5%;
+  margin: 5%
 }
 a p{
   margin-top: 2em;
