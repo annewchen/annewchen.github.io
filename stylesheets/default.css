@@ -1,25 +1,28 @@
 body{
   background-color: #a4a9ff;
 }
-section{
+aside{
+  display: inline-block;
   background-color: #adadb1;
-  border-radius: 40px;
+  border-radius: 20px;
+  border: 2px solid white;
 }
+
 a {
   text-decoration: none;
+  transition: all .5s ease-in-out;
 }
 a:hover {
   color: red;
-  text-decoration: underline;
+  text-decoration: none;
+  transform: scale(1.1);
 }
 
-
-#main-title{
+h1{
+  display: block;
   width: 50%;
   margin-right: auto;
   margin-left: auto;
-}
-h1{
   font-family: Indie Flower;
   font-size: 3em;
   text-align: center;
@@ -29,12 +32,12 @@ h3{
   font-family: Lobster;
 }
 
-
+/*left aside*/
 .left{
   float: left;
-  margin: 1em;
-  height: 16em;
   width: 25%;
+  text-align: center;
+  font-family: Maven Pro;
 }
 #profile{
   height: 60%;
@@ -42,54 +45,18 @@ h3{
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 1em
 }
 
-#navigation-bar{
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.navbar-buttons{
-  display: inline-block;
-  margin-left: 60px;
-}
-
-article{
-  display: block;
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-  width: 47%;
-  z-index: 1;
-}
-a p {
-  position: relative;
-  font-size: 1em;
-  margin-top: 25px;
-}
-
-aside{
+/*main content*/
+section{
+  float: left;
+  margin-left: 1em;
+  width:45%;
   display: inline-block;
   background-color: #adadb1;
-  height: 250px;
-  width: 110px;
-  border-radius: 20px;
-}
-table{
-  margin-top: 10%;
-}
-td{
-  font-size: 15px;
-  font-family: Maven Pro;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.navigation-bar{
-  display: inline-block;
-  z-index: 2;
+  border-radius: 40px;
+  border: 2px solid white;
 }
 .navigation-buttons{
   background-color: #7a81ff;
@@ -100,22 +67,35 @@ td{
   text-align: center;
   margin: 1em;
 }
+a p{
+  margin-top: 2em;
+}
+td{
+  font-size: 15px;
+  font-family: Maven Pro;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
+/*right aside*/
 .right{
   float: right;
-  margin: 1em;
-  height: 18em;
   width: 25%;
-  margin-top: -150px;
+}
+nav {
+  height:100%;
 }
 .links{
-  height: 2em;
-  width: 10em;
+  height: 15%;
+  width: 90%;
   margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
-
-.lsidebar-links{
+.sidebar-links{
   margin-left: auto;
   margin-right: auto;
   width: 60%;
 }
+
