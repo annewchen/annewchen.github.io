@@ -96,16 +96,18 @@
           A Class is used when you want to organize information. When you have a lot of methods and variables that all fall under a common theme, you can group them into a Class. That way you can keep reusing the information and it is convenient for you to edit. This is useful for when you start to make your own Classes.
           </p>
           <h3>How to use?</h3>
+          <h5>Create an empty Class</h5>
           <p>
-          Let's go ahead and try creating a Class from a real-world example of going to a restaurant. First, we need to make a Class named Restaurant.
+          Let's go ahead and try creating a Class from a real-world example of going to a restaurant. Let it be named Restaurant.
           </p>
           <pre><code>
   class Restaurant
 
   end
           </code></pre>
+          <h5>Add an initialize</h5>
           <p>
-          Next, we should think about what we want it to do first when it is run. This is called the <b>initialize method</b>. In our case, I want the Class to take the name of the restaurant and your order as its arguments and print a greeting string.
+          We should think about what we want it to do first when it is run. This is called the <b>initialize</b>. In our case, I want the Class to take the name of the restaurant and your order as its arguments and print a greeting string.
           </p>
           <pre><code>
   class Restaurant
@@ -114,8 +116,9 @@
     end
   end
           </code></pre>
+          <h5>Add instance methods</h5>
           <p>
-          Now we can think of what kind of variables and methods to put into our Class. Methods would be actions that you can call on the Class. In our example, Restaurant, we can create the methods: eat and leave.
+          It is time to think of variables and methods to put in our Class. Since methods are like actions, we can create the <b>instance methods</b>: eat and leave. These are called instance methods because you will need to create a new <b>instance</b> of Class Restaurant in order to call it. Below I will first add my empty instance methods.
           </p>
           <pre><code>
   class Restaurant
@@ -132,7 +135,21 @@
   end
           </code></pre>
           <p>
-          Now that we have more than one method, we are going to start running into problems with our <b>local variable</b>, name. This variable will only work in #initialize. In order to make it work in #eat and #leave, we will need to make them into <b>instance variables</b> by assigning them with the @ symbol. I will go ahead and do that in #initialize for variables name and food.
+          Now I will create an <b>instance</b> of Restaurant named example. Then I will call my <b>instance methods</b> eat and leave on it.
+          <pre><code>
+  >> example = Restaurant.new("InnOut", "fries")
+  => "Welcome to InnOut"
+  >> example.eat
+  => nil
+  >> example.leave
+  => nil
+          </code></pre>
+          <p>
+          Calling my methods currently result in 'nil'. Let's fix this by giving it something to output.
+          </p>
+          <h5>Add instance variables</h5>
+          <p>
+          Now that we have more than one method, we are going to start running into problems with our <b>local variable</b>, name. It is a <b>local variable</b> because it will only work in #initialize. In order to make it work in #eat and #leave, we will need to make them into <b>instance variables</b> by assigning them with the @ symbol. I will go ahead and do that in #initialize for variables name and food.
           </p>
           <pre><code>
   class Restaurant
@@ -152,8 +169,9 @@
     end
   end
           </code></pre>
+          <h5>Create an instance of my Class and run it</h5>
           <p>
-          Now lets go ahead and run our code to see what prints. First step is to create a new restaurant example. Then I will call #eat and #leave on it.
+          Finally, let's go ahead and run our code to see what prints. Again, I will create an <b>instance</b> of our Class Restaurant and name it example. Then I will call my <b>instance methods</b> #eat and #leave on it.
           </p>
           <pre><code>
   >> example = Restaurant.new("InnOut", "fries")
