@@ -1,0 +1,137 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <link rel = "stylesheet", type = "text/css", href="./cheatsheet.css">
+      <title>JavaScript Prototype Cheat Sheet </title>
+    </head>
+      <body>
+          <div id = "title">
+            <h1> JavaScript Prototype Cheat Sheet </h1>
+            <h2>A Cheat Sheet For Beginners</h2>
+          </div>
+            <h3>Description</h3>
+              <p id= "description">
+              Prototypes in JavaScript are a lot like classes in Ruby. All JavaScript object inheret properties and methods from their parent prototypes. The prototype itself is also an object, but the syntax for adding to the prototype object is not the same as the syntax of adding to a regular object. An object called Object() inherets properties from Object.prototype.
+              </p>
+            <article>
+            <h3>Creating A Prototype</h3>
+              <p id= "create_description">
+              The standard way to create a new prototype in JavaScript is by using the <span>object constructor function </span>as displayed below:
+              </p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Input</th>
+                    <th> Output</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <pre>
+function student(first, last, school, age){
+  this.firstName = first;
+  this.lastName = last;
+  this.school = school;
+  this.age = age;
+}
+
+var student1 = new student("Jane", "Doe", "DBC", 24)
+                      </pre>
+                    </td>
+                    <td>
+                      <pre>
+    >> console.log(student1)
+    => { firstName: 'Jane',
+      lastName: 'Doe',
+      school: 'DBC',
+      age: 24 }
+
+                      </pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <article>
+              <h3>Modifying the Prototype</h3>
+                <p id = "modify_descript">
+                Modifying the prototype can be done in two ways. The first is through the manual insertion of a new property or method into the object constructor. The second way is by using the .prototype method by typing in: prototype_name.prototype.new_property = "default_property_value." An example of this method is included below:
+                </p>
+                <h4>Add Properties:</h4>
+                  <table>
+                  <thead>
+                    <tr>
+                      <th>Input</th>
+                      <th> Output</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <pre>
+function student(first, last, school, age){
+  this.firstName = first;
+  this.lastName = last;
+  this.school = school;
+  this.age = age;
+}
+
+var student1 = new student("Jane", "Doe", "DBC", 24)
+student.prototype.gender = "female";
+                        </pre>
+                      </td>
+                      <td>
+                        <pre>
+    >> console.log(student1.gender)
+    => female
+                        </pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h4>Add Methods: </h4>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Input</th>
+                        <th> Output</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <pre>
+function student(first, last, school, age){
+  this.firstName = first;
+  this.lastName = last;
+  this.school = school;
+  this.age = age;
+}
+
+var student1 = new student("Jane", "Doe", "DBC", 24)
+student.prototype.summary = function()
+       {return this.firstName + " "
+        + this.lastName + " is attending "
+        + this.school + ".";}
+                            </pre>
+                          </td>
+                          <td>
+                            <pre>
+    >> console.log(student1.summary())
+    => Jane Doe is attending DBC.
+                            </pre>
+                          </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </article>
+      <div id="footer">
+        <p>Created By: Anne Chen & Amrita Athwal</p>
+        <p>Source: <a href="http://www.w3schools.com/js/js_object_prototypes.asp">w3schools</a></p>
+      </div>
+    </body>
+  </html>
+
+
+
