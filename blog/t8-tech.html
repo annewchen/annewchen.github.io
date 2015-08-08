@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anne's Blog: Recursion</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Maven+Pro:400,700|Architects+Daughter' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header>
+      <h1>What is recursion?</h1>
+    </header>
+    <main>
+      <aside id="left">
+        <h3>Navigation</h3>
+        <nav>
+          <a href="../index.html" class="navigation-buttons">
+            <p>My Website</p>
+          </a>
+          <a href="../about_me.html" class="navigation-buttons">
+            <p>About Me</p>
+          </a>
+          <a href="../projects/index.html" class="navigation-buttons">
+            <p>My Projects</p>
+          </a>
+          <a href="./index.html" class="navigation-buttons">
+            <p>Blog Posts</p>
+          </a>
+          <a href="mailto:annewchen@gmail.com" class="navigation-buttons">
+            <p>Contact Me</p>
+          </a>
+        </nav>
+      </aside>
+      <article>
+        <section>
+        <!-- <h2>The subtitle, if you want it</h2> -->
+        <h4>August 7, 2015</h4>
+          <h3>What is recursion?</h3>
+          <p>
+          As someone who is fond of math, the best way in which I can describe recursion is a sequence where the answer to the current problem depends on the answer from the previous problem. In other words, you are defining the problem in terms of itself. The loop can go on forever depending on the bounds. A popular example would be the Fibonacci Numbers:
+          <a href="http://mathworld.wolfram.com/FibonacciNumber.html"><img src="../imgs/t8-fibonacci.png"></a>
+          </p>
+          <h3>Why is coding recursion rare?</h3>
+          <p>
+          In most coding languages however, recursion seems to be less used as iteration is preferred. In order to understand why, I wanted to introduce the idea of <a href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">stack</a>. Stack is a collection of elements in which the 2 main operations are pushing a element in and popping an element off. A call stack stores the subroutines of a program. When a program starts, there is a chunk of memory that is assigned to the stack. When that memory runs out, the program crashes from stack overflow. The most common cause of stack overflow is recursion. Since recursion is about the function calls on itself, there are cases in which it calls on itself so many times that the space required to store the variables and information associated with each call is too much. But it does need to be noted that the good thing about recursion is that it usually makes the code shorter and easier to read.
+          </p>
+        <h3>JavaScript Example</h3>
+          <p>
+          Below is an example of recursion where a function is written for factorial, "!". The first part is defining that the factorial of 0 is 1. Other than that special case, the factorial of each number depends on the factorial of the integer prior. For example, 4! is actually (3! * 4).
+          </p>
+          <pre><code>
+  function factorial(n) {
+    if (n === 0) {
+      return 1;
+    }
+      return n * factorial(n - 1);
+  }
+          </code></pre>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="http://www.cs.utah.edu/~germain/PPS/Topics/recursion.html">University of Utah: School of Computing</a></li>
+          <li><a href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Recursions/recursions.html">Carnegie Mellon University: School of Computer Science</a></li>
+        </ul>
+        </section>
+
+        <aside id="right">
+          <h3>Links</h3>
+          <nav>
+              <a href="https://www.linkedin.com/in/annewchen"><img class="links" src="../imgs/linkedin-logo-button.png" alt="Linkedin"/></a>
+
+              <a href="https://github.com/annewchen"><img class="links" src="../imgs/github-logo-button.png" alt="github"/></a></li>
+
+              <a href="https://www.facebook.com/anne.chen.37"><img class="links" src="../imgs/facebook-logo-button.png" alt="facebook"/></a>
+
+              <a href="https://twitter.com/annewchen"><img class="links" src="../imgs/twitter-logo-button.png" alt="twitter"/></a>
+          </nav>
+        </aside>
+      </article>
+    </main>
+  </body>
+</html>
+
