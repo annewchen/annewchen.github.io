@@ -21,15 +21,13 @@ a:hover {
 h1{
   display: block;
   width: 50%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 1em;
   font-family: Indie Flower;
   font-size: 3em;
-  text-align: center;
 }
 h3{
   text-align: center;
-  font-family: Lobster;
+  font-family: Indie Flower;
 }
 
 /*left aside*/
@@ -52,7 +50,7 @@ h3{
 section{
   float: left;
   margin-left: 1em;
-  width:45%;
+  width:60%;
   display: inline-block;
   background-color: #adadb1;
   border-radius: 40px;
@@ -75,37 +73,43 @@ img{
   width: 5em;
   border-radius: 100%;
   text-align: center;
-  margin: 1em 0em 1em 2em;
+  margin: 1em 1em 1em 2em;
 }
 a p{
   margin-top: 2em;
 }
+
+div{
+  margin-right: auto;
+  margin-left: auto;
+  height: 15em;
+  width:65%;
+  border:1px solid white;
+  border-radius: 5px;
+  overflow:auto;
+  margin-bottom: 2em;
+}
 td{
   font-size: 15px;
   font-family: Maven Pro;
-  text-align: left;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 /*right aside*/
 .right{
   float: right;
-  width: 25%;
+  width: 10%;
 }
 nav {
   height:100%;
 }
 .links{
-  height: 15%;
-  width: 90%;
-  margin-left: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
+  height: 40%;
+  width: 40%;
+  text-align: center;
+  margin-left: 2em;
 }
 .sidebar-links{
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
 }
 
