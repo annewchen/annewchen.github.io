@@ -7,8 +7,8 @@ body {
 header {
   font-family: Indie Flower;
   font-size: 1em;
-  margin-top: 0em;
-  margin-bottom: 0em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -48,30 +48,27 @@ article{
 
 section{
   float: left;
-  width: 70%;
-  background-image: url('../imgs/paper2-bg.jpg');
-  background-size: 100%;
+  width: 80%;
+  background-color: #adadb1;
+  border: 2px solid white;
   border-radius: 2em;
 }
 
-#right{
+.right{
   float: right;
-  height: 25em;
+  height: 24em;
   margin: 1em;
 }
-.links{
-  height: 4em;
-  width:4em;
-  margin: 1em;
+.sidebar-links{
+  height: 40%;
+  width:40%;
 }
-
 
 aside {
   background-color: #adadb1;
   border-radius: 40px;
-  width: 20%;
-  margin-left: 2em;
-  margin-right: 2em;
+  width: 15%;
+  border: 2px solid white;
   text-align: center;
 }
 p{
