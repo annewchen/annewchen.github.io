@@ -1,5 +1,4 @@
 body {
-  background-color: #A4A9FF;
   padding: 0;
   margin: 0;
 }
@@ -26,7 +25,8 @@ h4{
 }
 h3{
   font-family: Maven Pro;
-  text-align: center
+  text-align: center;
+  border-bottom: 1px solid #a4a9ff;
 }
 
 #left{
@@ -48,8 +48,7 @@ article{
 section{
   float: left;
   width: 80%;
-  background-color: #adadb1;
-  border: 2px solid white;
+  border: 2px solid #a4a9ff;
   border-radius: 2em;
 }
 
@@ -64,10 +63,9 @@ section{
 }
 
 aside {
-  background-color: #adadb1;
   border-radius: 40px;
   width: 13%;
-  border: 2px solid white;
+  border: 2px solid #a4a9ff;
   text-align: center;
 }
 p{
