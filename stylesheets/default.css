@@ -68,7 +68,7 @@ img{
 .navigation-buttons{
   background-color: #7a81ff;
   display: inline-block;
-  position: static;
+/*  position: static;*/
   height: 5em;
   width: 5em;
   border-radius: 100%;
