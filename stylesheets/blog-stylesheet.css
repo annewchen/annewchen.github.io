@@ -60,14 +60,14 @@ section{
   margin: 1em;
 }
 .sidebar-links{
-  height: 40%;
-  width:40%;
+  height: 50%;
+  width:50%;
 }
 
 aside {
   background-color: #adadb1;
   border-radius: 40px;
-  width: 15%;
+  width: 13%;
   border: 2px solid white;
   text-align: center;
 }
